@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [],
+  "containerDefinitions": [
+    {
+      "Authentication": {
+        "Bucket": "<bucket-name>",
+        "Key": "<prefix>/<dockercfg.json>"
+      },
+      "name": "<application-name>",
+      "image": "<image-name>:BUILD_TAG",
+      "environment": [
+        {
+          "name": "<environment-key>",
+          "value": "<environment-value>"
+        }
+      ],
+      "essential": true,
+      "memory": 512,
+      "mountPoints": []
+    }
+  ]
+}

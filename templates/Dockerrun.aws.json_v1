@@ -1,0 +1,16 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Authentication": {
+    "Bucket": "<bucket-name>",
+    "Key": "<prefix>/<dockercfg.json>"
+  },
+  "Image": {
+    "Name": "<image-name>:BUILD_TAG",
+    "Update": "true"
+  },
+  "Ports": [{
+    "ContainerPort": "<port-number>"
+  }],
+  "Logging": "/var/log/",
+  "Volumes": []
+}
